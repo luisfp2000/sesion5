@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: ''  # Especifica una versión/etiqueta/confirmación específica o déjalo vacío para la última versión
+    hooks:
+      - id: autopep8
+        exclude: '^$'  # Especifica archivos o patrones a excluir, '^$' excluye nada (todos los archivos se verificarán)
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args: [--ignore=E501]  # Agrega la indentación adecuada para los argumentos
+
+ 
